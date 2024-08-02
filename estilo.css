@@ -1,0 +1,13 @@
+header{
+    background-color: #7bff00;
+    box-shadow: 0px 10px 0px #fffb04;
+}
+
+#logo{
+    min-height: 50px;
+    width: 200px;
+}
+
+body{
+    background-color: rgb(255, 255,255);
+}
