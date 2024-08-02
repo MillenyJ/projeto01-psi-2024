@@ -10,10 +10,29 @@
 </head>
 <body>
     <header class="row ">
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu">
+                <li><span class="dropdown-item-text">Dropdown item text</span></li>
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+          </div>
         <nav class="flexbox">
             <img id="logo" src="{% static 'logo-ifrn.png' %}" alt="logo">
         </nav>
     </header>
+    <div>
+        <p> A Seleção Brasileira de Futebol Feminino é a melhor seleção da América do Sul tendo ganhado oito das nove conquistas da Copa América.
+            É considerada uma das melhores seleções de futebol feminino do mundo. Apesar de ter pouco (e, muitas vezes, nenhum) apoio de dirigentes, torcida e imprensa, pouco investimento no mercado (devido à pouca demanda) sempre está bem posicionada no Ranking da FIFA. Porém, não tem nenhum título expressivo de nível mundial.
+        </p>
+    </div>
+    <footer>
+        <p>p</p>
+    </footer>
     <script src="bootstrap.bundle.min.js"></script>
 </body>
 </html>

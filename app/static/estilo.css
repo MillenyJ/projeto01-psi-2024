@@ -9,6 +9,9 @@ header{
     width: 200px;
 }
 
+footer{
+    background-color: #fffb04;
+}
 body{
     background-color: rgb(255, 255,255);
 }
