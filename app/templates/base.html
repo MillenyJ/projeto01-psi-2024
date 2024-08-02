@@ -9,8 +9,11 @@
     <title>{% block title %} Meu time {% endblock %}</title>
 </head>
 <body>
-    <header>
-        <img id="logo" src="img/logo-ifrn.png" alt="">
+    <header class="row ">
+        <nav class="flexbox">
+            <img id="logo" src="{% static 'logo-ifrn.png' %}" alt="logo">
+        </nav>
     </header>
+    <script src="bootstrap.bundle.min.js"></script>
 </body>
 </html>
