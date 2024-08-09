@@ -21,11 +21,13 @@ body{
     background-color: rgb(255, 255,255);
 }
 
-#fototamanho{
+
+
+#botoes {
+    color: aliceblue;
+}
+#perfil{
+    border-radius: 360px;
     width: 350px;
     
-}
-
-#botoes{
-    color: azure;
 }
