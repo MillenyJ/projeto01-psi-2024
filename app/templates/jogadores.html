@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %}Jogadoras{% endblock %}
+
+{% block content %}
+  <center>
+    <h1>Jogadoras</h1>
+        {% for jogadores in jogadores_list %}
+          <div class="card" style="width: 18rem;">
+              <img src="{{jogadores.foto}}" class="card-img-top" alt="{{ jogadores.nome }}">
+              <div class="card-body">
+                <h5 class="card-title">{{ jogadores.nome }}</h5>
+                <div class="card-text">
+                  <p>Idade: {{ jogadores.idade }}</p>
+                  <p>Local de Nascimento: {{ jogadores.nascimento }}</p>
+                  <p>Posição: {{ jogadores.posicao }}</p>
+                </div>
+              </div>
+          </div>
+        {% endfor %}
+  </center>
+
+{% endblock %}

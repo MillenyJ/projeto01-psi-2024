@@ -8,10 +8,23 @@ header{
     min-height: 50px;
     width: 200px;
 }
+h1{
+    padding-top: 30px;
+    color: black;
+}
 
 footer{
     background-color: #fffb04;
+    
 }
 body{
     background-color: rgb(255, 255,255);
+}
+
+#fototamanho{
+    width: 350px;
+}
+
+#botoes{
+    
 }

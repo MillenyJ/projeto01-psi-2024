@@ -1,6 +1,17 @@
 {% extends "base.html" %}
-{% block title %}  {% endblock %}
+{% load static %}
+
+{% block title %} Inicio {% endblock %}
+
 {% block content %}
-<h1> Pagina inicial </h1>
-  <p> dkfkwfg </p>
+  <center>
+  <h1> Sobre </h1>
+    <img id="fototamanho" src="{% static 'time2.webp' %}" alt="timefem">
+    <p> Informações dos atletas </p>
+    <p>Seleção Brasileira de Futebol Feminino é a equipe que representa o Brasil nas principais competições internacionais femininas. Ocupa a nona colocação do Ranking Mundial de Seleções da Federação Internacional
+
+      A Seleção Brasileira de Futebol Feminino é a melhor seleção da América do Sul tendo ganhado oito das nove conquistas da Copa América. Além disso, tem a melhor jogadora do mundo, Marta, camisa 10 e eleita por 5 anos seguidos pela FIFA (de 2006 a 2010) e mais uma vez em 2018 como a melhor jogadora de futebol do planeta
+    </p>
+    <img src="{% static 'timefotofem.jpg' %}" alt="timefotfem">
+</center>
 {% endblock %}
