@@ -6,69 +6,69 @@ def index(request):
     return render(request, "index.html")
 
 def jogadores(request):
-    jogadores_list = [
+    jogadores = [
     {"nome": "Barbara", "idade": "36", 
      "posicao": "Goleiro", 
-     "nascimento": "1", 
+     "localdenascimento": "Recife,Pernambuco", 
      "foto": "jogadora9.jpg"},
     
     {"nome": "Duda Sampaio.", "idade": "23", 
      "posicao": "Atacante", 
-     "nascimento": "2", 
+     "localdenascimento": "Rio Casca,Minas Gerais", 
      "foto": "jogadora8.jpg"},
     
     {"nome": "Tamires", "idade": "37", 
      "posicao": "Defensor", 
-     "nascimento": "3", 
+     "localdenascimento": " Caeté, Minas Gerais", 
      "foto": "jogadora7.jpg"},
     
     {"nome": "Rafaelle", "idade": "33", 
      "posicao": "Defensor", 
-     "nascimento": "4", 
+     "localdenascimento": "Cipó, Bahia", 
      "foto": "jogadora6.jpg"},
     
     {"nome": "Adriana", "idade": "36", 
      "posicao": "Meio-campo", 
-     "nascimento": "5", 
-     "foto": "jogadora9.jpg"},
+     "localdenascimento": "União, Piauí", 
+     "foto": "jogadora5.jpg"},
     
     {"nome": "Kerolin", "idade": "24", 
      "posicao": "Atacante", 
-     "nascimento": "6", 
+     "localdenascimento": "Bauru, São paulo", 
      "foto": "jogadora4.jpg"},
     
     {"nome": "Debinha", "idade": "33", 
      "posicao": "Atacante", 
-     "nascimento": "7", 
+     "localdenascimento": "Brazópolis, Minas Gerais", 
      "foto": "jogadora3.jpg"},
     
     {"nome": "Beatriz", "idade": "30", 
      "posicao": "Atacante", 
-     "nascimento": "8", 
+     "localdenascimento": "Araraquara, São Paulo", 
      "foto": "jogadora2.jpg"},
     
     {"nome": "Antonia", "idade": "30", 
      "posicao": "Defensor", 
-     "nascimento": "9", 
+     "localdenascimento": "Pau dos Ferros, Rio Grande do Norte", 
      "foto": "jogadora1.jpg"},
     
     {"nome": "Gabriela Nunes", "idade": "27", 
      "posicao": "Atacante", 
-     "nascimento": "10", 
+     "localdenascimento": "São Paulo, São Paulo", 
      "foto": "jogadora11.jpg"},
     
     {"nome": "Monica", "idade": "37", 
      "posicao": "Meio-campo", 
-     "nascimento": "11", 
+     "localdenascimento": "Porto Alegre, Rio Grande do Sul", 
      "foto": "jogadora10.jpg"},
 
     ]
 
     context = {
-        "jogadores": jogadores_list,
+        "jogadores": jogadores,
     }
 
-    return render(request, "jogadores.html")
+    return render(request, "jogadores.html", context)
 
 def sobre(request):
     return render(request, "sobre.html")
