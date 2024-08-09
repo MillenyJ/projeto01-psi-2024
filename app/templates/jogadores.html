@@ -3,8 +3,10 @@
 {% block title %}Jogadoras{% endblock %}
 
 {% block content %}
-  <center>
-    <h1>Jogadoras</h1>
+  <section class="jogadores">
+    <div>
+      <h1>Jogadoras</h1>
+      <div class="row-cards">
         {% for jogador in jogadores %}
           <div class="card" style="width: 18rem;">
               <img src="{% static jogador.foto %}" class="card-img-top" alt="{{ jogador.nome }}">
@@ -18,6 +20,8 @@
               </div>
           </div>
         {% endfor %}
-  </center>
-
+      </div>
+    </div>
+  </section>
+  
 {% endblock %}

@@ -1,7 +1,7 @@
 header{
-    background-color: #7bff00 ;
+    background-color: #458f00 ;
     padding-left: -10%;
-    box-shadow: 0px 25px 0px #fffb04;
+    box-shadow: 0px 25px 0px #ebe722;
 }
 
 #logo{
@@ -14,7 +14,7 @@ h1{
 }
 
 footer{
-    background-color: #fffb04;
+    background-color: #ebe722;
     
 }
 body{
@@ -30,4 +30,11 @@ body{
     border-radius: 360px;
     width: 350px;
     
+}
+
+.jogadores .row-cards{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
 }
