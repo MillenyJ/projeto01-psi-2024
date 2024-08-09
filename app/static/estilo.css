@@ -31,6 +31,9 @@ body{
     width: 350px;
     
 }
+#formato{
+    padding-top: 30px;
+}
 
 .jogadores .row-cards{
     display: flex;

@@ -3,25 +3,27 @@
 {% block title %}Jogadoras{% endblock %}
 
 {% block content %}
-  <section class="jogadores">
-    <div>
-      <h1>Jogadoras</h1>
-      <div class="row-cards">
-        {% for jogador in jogadores %}
-          <div class="card" style="width: 18rem;">
-              <img src="{% static jogador.foto %}" class="card-img-top" alt="{{ jogador.nome }}">
-              <div class="card-body">
-                <h5 class="card-title">{{ jogador.nome }}</h5>
-                <div class="card-text">
-                  <p>Idade: {{ jogador.idade }}</p>
-                  <p>Local de Nascimento: {{ jogador.localdenascimento }}</p>
-                  <p>Posição: {{ jogador.posicao }}</p>
+  <center>
+    <section  class="jogadores">
+      <div >
+        <h1>Jogadoras</h1>
+        <div class="row-cards">
+          {% for jogador in jogadores %}
+            <div class="card" style="width: 18rem;">
+                <img src="{% static jogador.foto %}" class="card-img-top" alt="{{ jogador.nome }}">
+                <div class="card-body">
+                  <h5 class="card-title">{{ jogador.nome }}</h5>
+                  <div class="card-text">
+                    <p>Idade: {{ jogador.idade }}</p>
+                    <p>Local de Nascimento: {{ jogador.localdenascimento }}</p>
+                    <p>Posição: {{ jogador.posicao }}</p>
+                  </div>
                 </div>
-              </div>
-          </div>
-        {% endfor %}
+            </div>
+          {% endfor %}
+        </div>
       </div>
-    </div>
-  </section>
-  
+    </section>
+  </center>
+    
 {% endblock %}

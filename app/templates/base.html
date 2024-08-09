@@ -14,11 +14,13 @@
         <nav class="flexbox">
             <img id="logo" src="{% static 'logo-ifrn.png' %}" alt="logo">
         </nav>
-        <div flexbox id="botoes">
-            <a href="{% url 'index' %}">Início</a>
-            <a href="{% url 'jogadores' %}">Jogadores</a>
-            <a href="{% url 'sobre' %}">Sobre</a>
-        </div>
+        <center>
+            <div flexbox >
+                <a id="botoes" href="{% url 'index' %}">Início</a>
+                <a id="botoes" href="{% url 'jogadores' %}">Jogadores</a>
+                <a id="botoes" href="{% url 'sobre' %}">Sobre</a>
+            </div>
+        </center>
     </header>
     {% block content %}
     <h1>Meu belo site</h1>
